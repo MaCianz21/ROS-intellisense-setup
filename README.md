@@ -59,10 +59,14 @@ It collects `build/*/compile_commands.json` files and writes a merged database t
 ## 4. Reload VS Code
 
 After creating the merged file:
-
 1. Reload the VS Code window
 2. Re-open your source file
 3. Wait for the C/C++ extension to finish indexing
+
+Or:
+- Command palette
+- Run
+- `C/C++: Reset IntelliSense Database`
 
 ## 5. When to rerun
 
