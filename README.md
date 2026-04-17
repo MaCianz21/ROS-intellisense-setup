@@ -41,7 +41,7 @@ colcon build --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
 If you only want to rebuild one package, use:
 
 ```bash
-colcon build --packages-select ma_robot_move --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+colcon build --packages-select test_robot_move --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
 ```
 
 ## 3. Merge compile command files
