@@ -45,11 +45,14 @@ colcon build --packages-select ma_robot_move --cmake-args -DCMAKE_EXPORT_COMPILE
 ```
 
 ## 3. Merge compile command files
-
-Place the helper script in the root of the project and run it:
-
+Place in the root of the project and add execution perms to the script file:
 ```bash
-./merge_compile_commands.py
+chmod +x merge.py
+```
+
+Run the script:
+```bash
+./merge.py
 ```
 
 It collects `build/*/compile_commands.json` files and writes a merged database to:
@@ -59,10 +62,14 @@ It collects `build/*/compile_commands.json` files and writes a merged database t
 ## 4. Reload VS Code
 
 After creating the merged file:
-
 1. Reload the VS Code window
 2. Re-open your source file
 3. Wait for the C/C++ extension to finish indexing
+
+Or:
+- Command palette
+- Run
+- `C/C++: Reset IntelliSense Database`
 
 ## 5. When to rerun
 
